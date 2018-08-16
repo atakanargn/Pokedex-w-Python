@@ -6,7 +6,9 @@
 from bs4 import BeautifulSoup
 import requests
 from sys import argv
+
 choosen = argv[1]
+
 r = requests.get('https://pokemondb.net/pokedex/'+str(choosen))
 source = BeautifulSoup(r.content, "html.parser")
 
