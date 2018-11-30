@@ -6,6 +6,9 @@
 from bs4 import BeautifulSoup
 import requests
 
+def alperen():
+    print("Merhaba ben Alperen")
+
 def searchPokemon(choosen):
 
     r = requests.get('https://pokemondb.net/pokedex/'+str(choosen))
